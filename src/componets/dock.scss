@@ -1,0 +1,105 @@
+.dock {
+    --icon-size: 56px;
+    display: flex;
+    position: fixed; // Fixed stays at bottom of screen
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(63, 63, 63, 0.4); // Slightly more transparent for glass look
+    padding-inline: 0.8rem;
+    padding-block: 0.6rem;
+    border-radius: 1.25rem; 
+    backdrop-filter: blur(12px) saturate(160%);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    align-items: flex-end;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: all 0.3s ease;
+
+    .icon {
+        width: var(--icon-size);
+        height: var(--icon-size);
+        margin: 0 0.35rem;
+        border-radius: 0.8rem; // Classic macOS "Squircle"
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        transition: transform 250ms cubic-bezier(0.2, 0.9, 0.2, 1.1), margin 250ms ease;
+        transform-origin: bottom center;
+        will-change: transform;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+
+        // Subtile Glossy Overlay
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 50%);
+            border-radius: inherit;
+            pointer-events: none;
+        }
+
+        img {
+            width: 60%;
+            height: 60%;
+            object-fit: contain;
+            transition: transform 250ms ease;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+        }
+    }
+
+    // --- Hover Magnification (The macOS "Fish-eye" effect) ---
+    
+    .icon:hover {
+        transform: scale(1.5) translateY(-12px);
+        margin-inline: 1rem; // Pushes neighbors away slightly
+    }
+
+    // Targets the icons next to the hovered one
+    .icon:hover + .icon,
+    .icon:has(+ .icon:hover) {
+        transform: scale(1.2) translateY(-4px);
+        margin-inline: 0.6rem;
+    }
+
+    // --- Your Original Color Gradients ---
+    .github   { background: linear-gradient(180deg, #0b0b0b, #000000); }
+    .note     { background: linear-gradient(to bottom, rgb(255, 153, 87), rgb(255, 153, 28)); }
+    .pdf      { background: linear-gradient(to bottom, rgb(255, 87, 87), rgb(255, 28, 28)); }
+    .calender { background: linear-gradient(180deg, #63b3ff, #2b88ff); }
+    .spotify  { background: linear-gradient(180deg, #1db954, #16a447); }
+    .mail     { background: linear-gradient(180deg, #8b7cff, #4e3cff); }
+    .link     { background: linear-gradient(180deg, #4dd0e1, #13a4b4); }
+    .cli      { background: linear-gradient(180deg, #0f1720, #1b2430); }
+
+    // --- Active Dot Indicator ---
+    .icon::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #ffffff;
+        opacity: 0;
+        transition: opacity 200ms ease;
+    }
+
+    .icon.active::after {
+        opacity: 1;
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    }
+
+    @media (max-width: 480px) {
+        --icon-size: 44px;
+        bottom: 0.5rem;
+        padding-inline: 0.5rem;
+
+        .icon:hover {
+            transform: scale(1.25) translateY(-6px);
+        }
+    }
+}
