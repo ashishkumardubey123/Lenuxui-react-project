@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1000&auto=format&fit=crop",
+    "title": "Linux UI React Project",
+    "description": "A terminal-inspired React interface with custom SCSS themes.",
+    "tags": ["React", "SCSS", "UI"],
+    "repolink": "https://github.com/ashishkumardubey123/Lenuxui-react-project"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1000&auto=format&fit=crop",
+    "title": "Backend Note App",
+    "description": "Full-stack note management with Node.js and MongoDB integration.",
+    "tags": ["Node", "Express", "MongoDB"],
+    "repolink": "https://github.com/ashishkumardubey123/backend-note-app"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1000&auto=format&fit=crop",
+    "title": "Sheriyans Cohort 2.0",
+    "description": "Advanced JavaScript logic and system design architecture.",
+    "tags": ["JavaScript"],
+    "repolink": "https://github.com/ashishkumardubey123/-sheriyans-COHOT-2.0"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=1000&auto=format&fit=crop",
+    "title": "Digi-Web-X",
+    "description": "Scalable web platform built using TypeScript best practices.",
+    "tags": ["TypeScript"],
+    "repolink": "https://github.com/ashishkumardubey123/Digi-Web-X"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1000&auto=format&fit=crop",
+    "title": "Digital Web Services",
+    "description": "Enterprise-level service architecture for modern web apps.",
+    "tags": ["TypeScript"],
+    "repolink": "https://github.com/ashishkumardubey123/Digital-Web-services"
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000&auto=format&fit=crop",
+    "title": "React Router Dom",
+    "description": "Dynamic routing, nested layouts, and navigation protection.",
+    "tags": ["React"],
+    "repolink": "https://github.com/ashishkumardubey123/React_router_dom"
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=1000&auto=format&fit=crop",
+    "title": "Next.js Project",
+    "description": "High-performance SSR application with optimized asset delivery.",
+    "tags": ["Next.js", "React"],
+    "repolink": "https://github.com/ashishkumardubey123/Nextjs_Project"
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1000&auto=format&fit=crop",
+    "title": "HTML Invoice Template",
+    "description": "A clean, print-ready invoice layout for business billing.",
+    "tags": ["HTML", "CSS"],
+    "repolink": "https://github.com/ashishkumardubey123/htmlInvoice"
+  },
+  {
+    "id": 11,
+    "image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=1000&auto=format&fit=crop",
+    "title": "E-commerce UI",
+    "description": "Modern shopping interface with product grids and carts.",
+    "tags": ["CSS", "HTML"],
+    "repolink": "https://github.com/ashishkumardubey123/E-commerce"
+  },
+  {
+    "id": 12,
+    "image": "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1000&auto=format&fit=crop",
+    "title": "3D Web Experiments",
+    "description": "Interactive 3D rendering using modern JavaScript libraries.",
+    "tags": ["JavaScript"],
+    "repolink": "https://github.com/ashishkumardubey123/3d-web"
+  },
+  {
+    "id": 14,
+    "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1000&auto=format&fit=crop",
+    "title": "Weather API App",
+    "description": "Dynamic weather dashboard with real-time API connectivity.",
+    "tags": ["JavaScript", "API"],
+    "repolink": "https://github.com/ashishkumardubey123/weather-ap_js"
+  },
+  {
+    "id": 16,
+    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000&auto=format&fit=crop",
+    "title": "To-Do List App",
+    "description": "A sleek task manager with local storage persistence.",
+    "tags": ["JavaScript"],
+    "repolink": "https://github.com/ashishkumardubey123/To-Do-List"
+  }
+]

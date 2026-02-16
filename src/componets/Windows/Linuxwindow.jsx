@@ -2,7 +2,7 @@ import React from 'react'
 import { Rnd } from 'react-rnd'
 import './window.scss'
 
-function Linuxwindow(children) {
+function Linuxwindow({children}) {
   return (
    
   <Rnd>

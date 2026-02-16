@@ -6,6 +6,7 @@ import Github from "./componets/Windows/github";
 
 
 
+
 function App() {
 
 
@@ -13,7 +14,7 @@ function App() {
     <main>
       <Dock/>
       <Nave/>
-       {/* <Github/> */}
+     <Github/>
 
 
     </main>
